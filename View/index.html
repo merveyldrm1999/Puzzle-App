@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <style>
+        body {
+          background-image: url('https://imgrosetta.mynet.com.tr/file/11965796/640xauto.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+      </style>
+    </head>
+    <body>
+
+        <div class="container mt-5">
+            <div id="rowlari-sil">
+                <div class="row">
+                    <div class="col-4">
+
+                    </div>
+                    <div class="col-4">
+                        <div class="input-group">
+                            <span class="input-group-text
+
+                                ">Oyuncu
+                                1
+                                <div class="form-check ms-3">
+                                    <input value="1" class="form-check-input"
+                                        type="radio"
+                                        name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label"
+                                        for="flexRadioDefault1">
+                                        Oyuna Başla
+                                    </label>
+                                </div>
+                            </span>
+                            <input id="oyuncu1-name" type="text"
+                                aria-label="First name"
+                                class="form-control">
+
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-4">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="input-group">
+                            <span class="input-group-text">Oyuncu
+                                4
+                                <div class="form-check ms-3">
+                                    <input value="4" class="form-check-input"
+                                        type="radio"
+                                        name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label"
+                                        for="flexRadioDefault1">
+                                        Oyuna Başla
+                                    </label>
+                                </div>
+                            </span>
+                            <input id="oyuncu4-name" type="text"
+                                aria-label="First name"
+                                class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-4">
+
+                    </div>
+                    <div class="col-4">
+                        <div class="input-group">
+                            <span class="input-group-text">Oyuncu
+                                2
+                                <div class="form-check ms-3">
+                                    <input value="2" class="form-check-input"
+                                        type="radio"
+                                        name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label"
+                                        for="flexRadioDefault1">
+                                        Oyuna Başla
+                                    </label>
+                                </div>
+                            </span>
+                            <input id="oyuncu2-name" type="text"
+                                aria-label="First name"
+                                class="form-control">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+
+                    </div>
+                    <div class="col-4">
+                        <div class="input-group">
+                            <span class="input-group-text">Oyuncu
+                                3
+                                <div class="form-check ms-3">
+                                    <input value="3" class="form-check-input"
+                                        type="radio"
+                                        name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label"
+                                        for="flexRadioDefault1">
+                                        Oyuna Başla
+                                    </label>
+                                </div>
+                            </span>
+                            <input id="oyuncu3-name" type="text"
+                                aria-label="First name"
+                                class="form-control">
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+
+                    </div>
+                </div>
+            </div>
+            <div id="o-el" class="row mt-5">
+                <select id="select-val" class="form-select" aria-label="Default
+                    select example">
+                    <option value="bos" selected>Lütfen Oyun Elini Seçiniz</option>
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="7">7</option>
+                    <option value="9">9</option>
+                    <option value="11">11</option>
+                    <option value="13">13</option>
+                    <option value="15">15</option>
+                    <option value="17">17</option>
+                    <option value="19">19</option>
+                </select>
+            </div>
+            <div class="row mt-5">
+                <button onclick="save()" type="button"
+                    class="btn
+                    btn-primary">Oyuna Başla</button>
+            </div>
+
+
+
+            <div class="col-12 mt-5">
+                <table class="table table-striped">
+                    <thead>
+                        <tr id="table-players">
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody id="table-skor">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-12 mt-5">
+
+                <table class="table table-bordered">
+                    <thead id="table-compareplayers" class="
+                        table-bordered">
+
+                    </thead>
+                    <tbody id="table-compare" class=" table-bordered">
+                    </tbody>
+                </table>
+
+
+
+
+
+            </div>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            Kazanan: <h5 class="modal-title" id="winner-person"></h5>
+                            <button type="button" class="btn-close"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table table-bordered">
+                                <thead id="table-compare-player" class="
+                                    table-bordered">
+
+                                </thead>
+                                <tbody id="table-skor-compare" class="
+                                    table-bordered">
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="../Public/js/script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <style>
+                body {
+                  background-image: url('https://cdn.webtekno.com/media/cache/content_detail/article/74133/okey-oyna-101-okey-oyunlari-1565616535.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                }
+              </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row mt-5">
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-danger"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    OYUNA BAŞLA
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Oyun
+                                    Bilgileri</h5>
+                                <button type="button" class="btn-close"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <select class="form-select" aria-label="Default
+                                    select example">
+                                    <option selected>Lütfen Oyun Elini Seçiniz</option>
+                                    <option value="1">3</option>
+                                    <option value="2">5</option>
+                                    <option value="3">7</option>
+                                    <option value="4">9</option>
+                                    <option value="5">11</option>
+                                    <option value="6">13</option>
+                                    <option value="7">15</option>
+                                    <option value="8">17</option>
+                                    <option value="9">19</option>
+                                </select>
+
+                                <button class="btn mt-5 btn-outline-secondary
+                                    dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">Oyuncular</button>
+                                <ul class="dropdown-menu">
+                                    <li><div class="input-group">
+                                            <span class="input-group-text">Oyuncu
+                                                1
+                                            </span>
+                                            <input id="oyuncu1-name" type="text"
+                                                aria-label="First name"
+                                                class="form-control">
+
+                                        </div>
+                                    </li>
+                                    <li><div class="input-group">
+                                            <span class="input-group-text">Oyuncu
+                                                2</span>
+                                            <input id="oyuncu2-name" type="text"
+                                                aria-label="First name"
+                                                class="form-control">
+
+                                        </div></li>
+                                    <li><div class="input-group">
+                                            <span class="input-group-text">Oyuncu
+                                                3</span>
+                                            <input id="oyuncu3-name" type="text"
+                                                aria-label="First name"
+                                                class="form-control">
+
+                                        </div></li>
+                                    <li><div class="input-group">
+                                            <span class="input-group-text">Oyuncu
+                                                4</span>
+                                            <input id="oyuncu4-name" type="text"
+                                                aria-label="First name"
+                                                class="form-control">
+
+                                        </div></li>
+
+                                </ul>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Close</button>
+                                <button onclick="save()" type="button"
+                                    class="btn
+                                    btn-primary">Save
+                                    changes</button>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="../Public/js/script.js"></script>
+
+    </body>
+</html>
